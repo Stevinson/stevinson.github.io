@@ -1,0 +1,30 @@
+---
+layout: feed
+---
+
+<!-- Allows for a link to my RSS feed for users to subscribe to the blog -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Edward's Blog</title>
+	<link href="http://stevinson.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://stevinson.github.io/blog"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://stevinson.github.io/blog</id>
+	<author>
+		<name>Edward Stevinson</name>
+		<email>edward.stevinson@hotmail.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="http://stevinson.github.io{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://stevinson.github.io{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
