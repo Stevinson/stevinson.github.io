@@ -19,13 +19,13 @@ p {
     color: #333;
 }
 
-nav ul, footer ul {
+nav ul, .container ul {
     /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li, .container ul li {
     display: inline;
     margin-right: 20px;
 }
