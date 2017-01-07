@@ -23,25 +23,18 @@ p {
     color: #333;
 }
 
-nav ul {
+nav ul, .container ul {
     /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
 }
 
-.container ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.container ul li {
+nav ul li, .container ul li {
     display: inline;
     margin-right: 20px;
 }
