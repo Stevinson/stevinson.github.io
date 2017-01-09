@@ -28,10 +28,10 @@ nav ul, .container ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
+    /* display: -webkit-flex; 
+    -webkit-align-items: center; 
     display: flex;
-    align-items: center;
+    align-items: center; */
 }
 
 nav ul li, .container ul li {
