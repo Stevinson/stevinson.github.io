@@ -3,21 +3,29 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+			<meta name="viewport" content="width=device-width, initial-scale=1"> 
+			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet" type="text/css">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
+			<!--
 			<nav>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 	        		<li><a href="/work">Dissertations</a></li>
-				<li><a href="/blog">Blog</a></li>
+					<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
+			-->
+			<div class="outer_container">
+				<div class="inner_container">
+					<ul class="nav">
+	        			<li><a href="/">Home</a></li>
+	        			<li><a href="/work">Dissertations</a></li>
+						<li><a href="/blog">Blog</a></li>
+	    			</ul>
+					{{ content }}
+				</div>
+			</div>
 		</body>
 	</html>
