@@ -27,7 +27,7 @@ body {
 }
 
 .inner_container {
-	padding: 40px 20px 70px;
+	padding: 40px 50px 70px;
 }
 
 h1, h2 {
@@ -41,7 +41,7 @@ p {
 }
 
 ul {
-	font-size: 1.2em;
+	font-size: 1em;
 	list-style-type: none;
 	padding: 0px;
 	padding-top: 40px;		
@@ -53,10 +53,11 @@ li {
 }
 
 .nav {
-	font-size: 1.2em;
+	font-size: 1em;
 	list-style-type: none;
 	padding: 0px;
-	padding-top: 40px;
+	padding-top: 10px;
+	padding-bottom:50px;
 }
 
 .nav li {
@@ -71,7 +72,7 @@ a {
 a:hover {
     /*text-decoration: underline;*/
     color: #01aa9c;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
