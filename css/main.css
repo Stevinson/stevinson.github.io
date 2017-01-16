@@ -1,5 +1,5 @@
 body {
-    background: #fbfbf9
+    background: #fbfbf9;
     font-family:
           "Source Sans Pro", sans-serif; /* "Source Sans Pro", */
 	text-shadow: 1px 1px 1px #fff;
@@ -22,7 +22,7 @@ body {
 }
 
 .outer_container {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
 	max-height: 100%;
 }
@@ -41,27 +41,19 @@ p {
     color: #333;
 }
 
-/*
-nav ul, .container ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    /* display: -webkit-flex; 
-    -webkit-align-items: center; 
-    display: flex;
-    align-items: center; */
-}
-
-nav ul li, .container ul li {
-    display: inline;
-    margin-right: 20px;
-}
-*/
-
 .nav {
+	font-size: 16px;
 	list-style-type: none;
-	padding: 0;
+	padding: 0px;
+	padding-top: 40px;
 }
+
+.nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/*, .container ul li */
 
 a {
     text-decoration: none;
