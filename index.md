@@ -3,7 +3,7 @@ layout: default
 title: Edward Stevinson
 ---
 
-**Edward Stevinson**
+#Edward Stevinson
 
 Recent graduate in Engineering, Economics & Management (MEng) from the University of Oxford and Artificial Intelligence (MSc) from the University of Edinburgh.
 
