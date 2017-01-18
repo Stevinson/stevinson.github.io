@@ -10,5 +10,6 @@ Game Othello'. It uses Harsanyi-Bellman Ad Hoc Coordination to explore multi age
 that involve heterogeneous agents that do not know, a priori, how other agents in the system behave. Also included is a copy of the 
 finished dissertation report.
 
-*[CV](assets/stevinson_CV.pdf) (pdf)
+*[Report](assets/adhoc_coord.pdf) (pdf)
 *[Github](https://github.com/Stevinson/HBAdissertation)
+
