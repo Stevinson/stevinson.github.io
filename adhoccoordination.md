@@ -1,3 +1,8 @@
+---
+layout: default
+title: Edward Stevinson | Ad Hoc Coordination Dissertation
+---
+
 # Ad Hoc Coordination Dissertation
 
 This repository includes code for the thesis entitled 'Utilising Policy Types to Achieve Effective Ad Hoc Coordination in the
