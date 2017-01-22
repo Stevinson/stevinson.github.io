@@ -78,6 +78,14 @@ li {
     font-size: 1.4em;
 }
 
+.abstract h1 {
+    font-size: 1.2em;
+}
+
+.abstract p {
+    font-size: 0.8em;
+}
+
 a {
     text-decoration: none;
     color: #23ccbe;
