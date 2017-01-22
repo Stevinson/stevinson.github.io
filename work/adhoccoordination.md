@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: info
 title: Utilising Policy Types to Achieve Effective Ad Hoc Coordination in the Game Othello
 ---
 
