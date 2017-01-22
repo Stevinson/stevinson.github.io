@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: info
 title: Experiments in Creating Social Value: An exploration of the meanwhile use industry
 ---
 
