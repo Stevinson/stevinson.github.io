@@ -75,6 +75,7 @@ li {
 .pieces li {
     display: block;
     margin: 20px;
+    font-size: 1.4em;
 }
 
 a {
