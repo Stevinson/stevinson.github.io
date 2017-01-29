@@ -114,6 +114,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    display: block;
 }
 
 .bold {
