@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Website launched"
+title: "Hack Cambridge"
 date: 2017-01-29
 ---
 
