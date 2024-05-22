@@ -3,7 +3,7 @@ layout: default
 title: Edward Stevinson
 ---
 
-Recent graduate in Engineering, Economics & Management (MEng) from the University of Oxford and Artificial Intelligence (MSc) from the University of Edinburgh.
+Research engineer at [Safe Intelligence](https://safeintelligence.ai/) and PhD candidate at the [Safe AI Lab](https://sail.doc.ic.ac.uk/) at Imperial, researching the robustness of neural networks for time series.
 
 Contact me at [edward.stevinson@hotmail.com](mailto:edward.stevinson@hotmail.com)
 

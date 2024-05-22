@@ -105,6 +105,7 @@ ul.posts li {
 
 .post_body p {
     font-size: 1em;
+    text-align: start;
 }
 
 .bold {
