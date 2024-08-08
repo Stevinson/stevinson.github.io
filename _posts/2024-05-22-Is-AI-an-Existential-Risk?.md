@@ -4,6 +4,8 @@ title: "Is AI an Existential Risk?"
 date: 2024-05-22
 ---
 
+**The following is a transcript of my rebuttal during a recent debate.**
+
 Labelling AI as an existential risk to humanity frames it as an adversarial game between humans and machines. One in which AI is deceptively aligned with humans, with consequences that are global, permanent, and species-damning. I will make the case that evidence to support this is negligible, that the argument is a harmful distraction, that the fears are better understood from a sociological perspective, and that we could do a lot worse than to be a bit more optimistic in our own abilities to mitigate the risks.
 
 Pascal’s wager states that the potential consequences of not believing in God are so bad — eternal damnation — that it’s just more rational to believe in God regardless of whether God really exists [1]. However, this argument does not sufficiently consider the probability of the event in addition to the severity of the outcome. Similarly, believing AI to be an existential risk to humanity suffers the same flaw. Yes, going to hell in a rogue-AI-induced extinction would be terrible. So would dying at the hands of a super intelligent alien race. However, they are very unlikely events that are not backed up with sufficient evidence. Furthermore, it may be worse to focus our efforts on preparing for them if it leads us to make choices we otherwise wouldn’t have.
@@ -31,9 +33,11 @@ What makes climate change and nuclear war existential risks? I believe it’s a 
 
 **Concluding Remarks**
 
-My argument can be summarised with four statements: One, the evidence is negligible. If you believed statements based on this burden of evidence, you would also have to believe lots of other pretty crazy-sounding propositions. Two, that the worries are powered instead by human emotion. Once you start reasoning about the future without consideration of history, and given that it is easier to destroy than create, it is easy to become increasingly pessimistic and it becomes hard to see how everything will  hang together, whilst the argument that destruction is imminent becomes easier and easier. To quote Meredith Whittaker, the cofounder of the AI Now Institute, “Ghost stories are contagious—it’s really exciting and stimulating to be afraid.” Three, that it is a harmful distraction. In a world where budgets and attention spans are limited, X-risk may distract from other risks that get overlooked because they weren’t the priority. And finally, four, that we could do worse than to be more optimistic in our own abilities to innovate and tackle risks as they arise.
+My argument can be summarised with four statements: One, the evidence is negligible. If you believed statements based on this burden of evidence, you would also have to believe lots of other pretty crazy-sounding propositions. Two, that the worries are powered instead by human emotion. Once you start reasoning about the future without consideration of history, and given that it is easier to destroy than create, it is easy to become increasingly pessimistic and it becomes hard to see how everything will hang together, whilst the argument that destruction is imminent becomes easier and easier. To quote Meredith Whittaker, the cofounder of the AI Now Institute, “Ghost stories are contagious—it’s really exciting and stimulating to be afraid.” Three, that it is a harmful distraction. In a world where budgets and attention spans are limited, X-risk may distract from other risks that get overlooked because they weren’t the priority. And finally, four, that we could do worse than to be more optimistic in our own abilities to innovate and tackle risks as they arise.
 
-<br></br>
+$$
+p_j = \frac{e^{x_j}}{\sum_{j'=1}^{K} e^{x_{j'}}} = \frac{1}{1 + \sum_{j' \neq j} e^{x_{j'} - x_j}}, \quad j = 1, \ldots, K.
+$$
 
 ---
 
