@@ -35,9 +35,6 @@ What makes climate change and nuclear war existential risks? I believe it’s a 
 
 My argument can be summarised with four statements: One, the evidence is negligible. If you believed statements based on this burden of evidence, you would also have to believe lots of other pretty crazy-sounding propositions. Two, that the worries are powered instead by human emotion. Once you start reasoning about the future without consideration of history, and given that it is easier to destroy than create, it is easy to become increasingly pessimistic and it becomes hard to see how everything will hang together, whilst the argument that destruction is imminent becomes easier and easier. To quote Meredith Whittaker, the cofounder of the AI Now Institute, “Ghost stories are contagious—it’s really exciting and stimulating to be afraid.” Three, that it is a harmful distraction. In a world where budgets and attention spans are limited, X-risk may distract from other risks that get overlooked because they weren’t the priority. And finally, four, that we could do worse than to be more optimistic in our own abilities to innovate and tackle risks as they arise.
 
-$$
-p_j = \frac{e^{x_j}}{\sum_{j'=1}^{K} e^{x_{j'}}} = \frac{1}{1 + \sum_{j' \neq j} e^{x_{j'} - x_j}}, \quad j = 1, \ldots, K.
-$$
 
 ---
 

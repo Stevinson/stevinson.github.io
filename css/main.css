@@ -108,6 +108,24 @@ ul.posts li {
     text-align: start;
 }
 
+.post_body ol {
+  padding-left: 40px;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.post_body ol li {
+  display: list-item;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
 .bold {
 	font-weight: bold;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
