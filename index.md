@@ -3,7 +3,9 @@ layout: default
 title: Edward Stevinson
 ---
 
-Research engineer at [Safe Intelligence](https://safeintelligence.ai/) and PhD candidate at the [Safe AI Lab](https://sail.doc.ic.ac.uk/) at Imperial, researching the robustness of neural networks for time series.
+PhD candidate at the [Safe AI Lab](https://sail.doc.ic.ac.uk/) at Imperial, researching mechanistic interpretability and network robustness.
+
+Research engineer at [Safe Intelligence](https://safeintelligence.ai/).
 
 Contact me at [edward.stevinson@hotmail.com](mailto:edward.stevinson@hotmail.com)
 
