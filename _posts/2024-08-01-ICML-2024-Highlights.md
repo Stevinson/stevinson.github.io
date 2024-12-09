@@ -1,10 +1,14 @@
-# ICML 2024 Highlights
+---
+layout: post
+title: "ICML 2024 Highlights"
+date: 2024-08-01
+---
 
 ICML 2024 was my first academic conference experience. While initially overwhelming, it was an great opportunity to understand current research trends. Here are the papers that particularly caught my attention:
 
 ### SparseTSF: Modeling Long-term Time Series Forecasting with 1k Parameters
 
- **Showing that tiny models with just 1,000 parameters can match or exceed the performance of large models in time series forecasting by leveraging data periodicity.**
+ ##### Showing that tiny models with just 1,000 parameters can match or exceed the performance of large models in time series forecasting by leveraging data periodicity.
 
 [Paper](https://arxiv.org/abs/2405.00946)
 
@@ -13,7 +17,7 @@ A particularly interesting tension in time series forecasting seems to be betwee
 
 ### Adversarial Robustness Limits via Scaling-Law and Human-Alignment Studies
 
-**Many adversarial examples are unclassifiable even by humans, leading to a significant reframing of model robustness benchmarks.**
+##### Many adversarial examples are unclassifiable even by humans, leading to a significant reframing of model robustness benchmarks.
 
 [Paper](https://arxiv.org/abs/2404.09349)
 
@@ -22,7 +26,7 @@ What made this paper particularly interesting to me was its pragmatic approach t
 
 ### Arrows of Time for Large Language Models
 
-**Large language models consistently find it easier to predict the next token than the previous one, and explaining this phenomenon using ideas from computational complexity.**
+##### Large language models consistently find it easier to predict the next token than the previous one, and explaining this phenomenon using ideas from computational complexity.
 
 [Paper](https://arxiv.org/abs/2401.17505)
 
@@ -35,7 +39,7 @@ They use a prime number multiplication example to show an example of a problem w
 
 ### Extending Adversarial Attacks to Produce Adversarial Class Probability
 
-**An adversarial attack that manipulates the statistical distributions of model outputs.**
+##### An adversarial attack that manipulates the statistical distributions of model outputs.
 
 [Paper](https://arxiv.org/abs/2004.06383)
 
@@ -44,7 +48,7 @@ The really interesting aspect of this work is its novel attack vector. It moves 
 
 ### Et tu certifications: robustness certificates
 
-**Robustness certificates can be exploited to create more effective adversarial examples.**
+##### Robustness certificates can be exploited to create more effective adversarial examples.
 
 [Paper](https://proceedings.mlr.press/v235/cullen24a.html)
 

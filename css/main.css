@@ -35,7 +35,7 @@ ul {
 	font-size: 1em;
 	list-style-type: none;
 	padding: 0px;
-	padding-top: 40px;		
+	padding-top: 20px;
 }
 
 li {
@@ -115,6 +115,18 @@ ul.posts li {
 }
 
 .post_body ol li {
+  display: list-item;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.post_body ul {
+  padding-left: 40px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.post_body ul li {
   display: list-item;
   margin: 0 0 10px 0;
   text-align: left;
