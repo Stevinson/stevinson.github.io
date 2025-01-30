@@ -8,7 +8,7 @@ ICML 2024 was my first academic conference experience. While initially overwhelm
 
 ### SparseTSF: Modeling Long-term Time Series Forecasting with 1k Parameters
 
- ##### Showing that tiny models with just 1,000 parameters can match or exceed the performance of large models in time series forecasting by leveraging data periodicity.
+##### Showing that tiny models with just 1,000 parameters can match or exceed the performance of large models in time series forecasting by leveraging data periodicity.
 
 [Paper](https://arxiv.org/abs/2405.00946)
 
