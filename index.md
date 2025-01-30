@@ -3,7 +3,7 @@ layout: default
 title: Edward Stevinson
 ---
 
-PhD candidate at the [Safe AI Lab](https://sail.doc.ic.ac.uk/) at Imperial, researching mechanistic interpretability and network robustness.
+PhD candidate at the [CIRCLE](https://tolgabirdal.github.io/people/) and [Safe AI Lab](https://sail.doc.ic.ac.uk/) research labs at Imperial, researching mechanistic interpretability and neural network robustness.
 
 Research engineer at [Safe Intelligence](https://safeintelligence.ai/).
 
