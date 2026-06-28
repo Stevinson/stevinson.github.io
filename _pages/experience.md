@@ -48,7 +48,8 @@ profile:
   .xp-desc { margin: 0; color: var(--global-text-color); }
   @media (max-width: 576px) {
     .xp-entry { grid-template-columns: 1fr; gap: 0.6rem; }
-    .xp-left { flex-direction: row; align-items: center; }
+    /* Stack the logo under the dates (instead of beside them) on phones. */
+    .xp-left { flex-direction: column; align-items: flex-start; }
   }
 </style>
 

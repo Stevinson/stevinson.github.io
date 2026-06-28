@@ -81,7 +81,11 @@ body.superposition-active #navbar {
     background-color 0.3s ease,
     border-color 0.3s ease;
 }
-body.superposition-active #navbar.scrolled {
+/* Solid background once scrolled, OR as soon as the mobile menu is opened
+ * (the toggle adds `.show` to the collapse) — otherwise the popped-out links
+ * sit over a see-through bar and are hard to read at the top of the page. */
+body.superposition-active #navbar.scrolled,
+body.superposition-active #navbar:has(.navbar-collapse.show) {
   background-color: var(--global-bg-color);
   opacity: 0.95;
   border-bottom-color: var(--global-divider-color);
@@ -182,4 +186,16 @@ img.preview {
 
 .abbr .badge {
   display: none !important;
+}
+
+/* -------------------------------------------------------------------------
+ * Drop the copyright footer bar entirely, and reclaim the space the body
+ * reserves for the fixed-bottom footer (70px).
+ * ---------------------------------------------------------------------- */
+footer.fixed-bottom,
+footer.sticky-bottom {
+  display: none;
+}
+body {
+  padding-bottom: 0;
 }

@@ -97,6 +97,9 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+          # Mark the built output as static so GitHub Pages serves it as-is and
+          # never tries to re-build it with its own (al-folio-incompatible) Jekyll.
+          touch _site/.nojekyll
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
