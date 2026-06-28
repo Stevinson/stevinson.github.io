@@ -1,7 +1,9 @@
 **/*.map
 **/*.min.css
 **/*.min.js
+old_website/
 assets/css/main.scss
+assets/js/superposition-bg.js
 assets/js/distillpub/template.v2.js
 assets/js/search/*.js
 assets/plotly/demo.html

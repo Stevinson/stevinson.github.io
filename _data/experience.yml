@@ -1,0 +1,82 @@
+# Experience timeline rendered by _pages/experience.md
+# Each entry: date, logo (file in assets/img/logos/), title, org, url, description
+# NOTE: dates, titles and logos are placeholders — confirm/replace them.
+
+work:
+  - date: "Feb 2025 — May 2025 · 4 mos"
+    logo: LASR.webp
+    title: Research Scientist
+    org: LASR Labs · Fellowship
+    url: https://www.lasrlabs.org/
+    description: >
+      Developed an AI safety method to elicit undesirable LLM behaviours through fluent prompt modifications optimised to maximally activate target SAE features. Our paper was accepted at ICLR 2026.
+
+  - date: "Apr 2023 — Apr 2025 · 2 yrs 1 mo"
+    logo: safe_intelligence_logo.jpg
+    title: Research Scientist
+    org: Safe Intelligence · Part-time
+    url: https://www.safeintelligence.ai/
+    description: >
+      As code owner of one of the company's neural-network verification toolkits and its certified-training toolkit, I turned research code into production-grade software for certifying and training robust models. Unlocked verification of time-series models, opening new use cases, by implementing support for softmax and 1D convolutional layers.
+
+  - date: "Jul 2022 — Sep 2022 · 3 mos"
+    logo: iris_ai_logo.jpg
+    title: Research Scientist
+    org: Iris.ai · Internship
+    url: https://iris.ai/
+    description: >
+      Research conducted during an internship focused on leveraging knowledge graphs to update word embeddings in the scientific domain concluding with presenting our paper at an AACL workshop on information extraction.
+
+  - date: "Apr 2022 — Sep 2022 · 6 mos"
+    logo: napo_pet_insurance_logo.jpg
+    title: Senior Software Engineer
+    org: Napo Pet Insurance · Contract
+    description: >
+      Contract python backend developer for the fast growing pet insurance startup. A member of the growth team who helped grow the customer base from 1k to 10k over six months.
+
+  - date: "Aug 2020 — Jan 2022 · 1 yr 6 mos"
+    logo: upside_logo.png
+    title: Lead Data Scientist
+    org: MyUpside · Full-time
+    description: >
+      Co-founded Upside, a workflow analytics platform that surfaces key metrics and trends to give software teams more autonomy. Built the platform's data and analytics stack end-to-end: a Python analytics engine computing its core metrics, Dagster data-science pipelines that turn the engine's output into the platform's models, and a Cube-powered analytics API driving the customer-facing visualisations.
+
+  - date: "Jun 2019 — Nov 2020 · 1 yr 6 mos"
+    logo: eigen_technologies_logo.jpg
+    title: Software Engineer
+    org: Eigen Technologies · Full-time
+    description: >
+      Eigen is an AI company automating the extraction and classification of information from legal documents. Built the company's custom ML lifecycle management system to reduce the cost of model development, and developed a tool to automate the sectioning of legal documents into a hierarchical representation of their structure.
+
+  - date: "Jun 2017 — Jan 2019 · 1 yr 8 mos"
+    logo: ibm_logo.jpg
+    title: Software Developer
+    org: IBM · Full-time
+    description: >
+      Server-side Java developer at IBM (i2), building the web-app version of an industry-leading investigative analysis platform used by law enforcement and intelligence agencies.
+
+studies:
+  - date: "2022 — 2026"
+    logo: imperial_college_london_logo.jpg
+    title: PhD, Artificial Intelligence
+    org: Imperial College London
+    url: https://www.imperial.ac.uk/
+    description: Mechanistic interpretability and neural network robustness verification.
+
+  - date: "2015 — 2016"
+    logo: edinburgh-uni-logo.jpg
+    title: MSc, Artificial Intelligence
+    org: The University of Edinburgh
+    url: https://www.ed.ac.uk/
+    description: >
+      Intelligent robotics specialism, with courses in machine learning, probabilistic
+      modelling, reinforcement learning and algorithmic game theory.
+
+  - date: "2011 — 2015"
+    logo: oxforduni_logo.jpg
+    title: MEng, Engineering, Economics and Management
+    org: University of Oxford
+    url: https://www.ox.ac.uk/
+    description: >
+      Engineering specialisms in information engineering, machine learning and software;
+      Economics and Management specialisms in strategy and game theory.

@@ -1,0 +1,8 @@
+# Shared "about me" banner intro.
+# Rendered on the home, experience and publications pages via
+# `{{ site.data.intro.text | markdownify }}` so the banner stays identical as
+# you move between them — only the content below the banner changes.
+text: |
+  Hi, I'm Ed, a research scientist and PhD candidate at the [CIRCLE](https://tolgabirdal.github.io/people/) group at Imperial College London, where I work on mechanistic interpretability and adversarial robustness. My research centres on understanding the representation geometry of neural networks and how this shapes adversarial vulnerability.
+
+  Find me on [Twitter](https://twitter.com/ed_stevinson), [Google Scholar](https://scholar.google.com/citations?user=m4_WK5oAAAAJ&hl=en), [Github](https://github.com/Stevinson/) and [LinkedIn](https://www.linkedin.com/in/edward-ai/). Please reach out by [email](mailto:edward.stevinson@hotmail.com) if you want to talk about any research!

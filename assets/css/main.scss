@@ -1,0 +1,185 @@
+---
+# Local shadow of al_folio_core's assets/css/main.scss.
+# Mirrors the gem's @use graph, then appends a brand-color (teal) cascade
+# override at the end. This is the contract-safe place to customise the
+# theme color: the starter may not own `_sass/`, but it may own `assets/css/`.
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+@use "sass:list";
+
+/* Configure design tokens BEFORE loading any partials. */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* -------------------------------------------------------------------------
+ * Brand color override (sea-green #4cae8a — one of the five banner colours).
+ * Re-declares the theme tokens after the gem's themes module so the later
+ * cascade wins. Links, the experience org names, etc. pick this up.
+ * ---------------------------------------------------------------------- */
+:root {
+  --global-theme-color: #4cae8a;
+  --global-hover-color: #3d9576;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #4cae8a;
+  --global-hover-color: #3d9576;
+}
+
+/* -------------------------------------------------------------------------
+ * Superposition canvas (home, experience and publications pages).
+ * Created by assets/js/superposition-bg.js and appended to <body>.
+ * Fixed, full-viewport; z-index:-1 paints it above the body background but
+ * behind page content. The rays appear to emanate from just above the name
+ * title. pointer-events:none so it never blocks clicks.
+ * ---------------------------------------------------------------------- */
+#superposition-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* -------------------------------------------------------------------------
+ * Banner-page tweaks. The body gets `.superposition-active` from the banner
+ * script (loaded on the about, experience and publications pages), so these
+ * are scoped to those pages without owning a layout/include.
+ * ---------------------------------------------------------------------- */
+
+/* Transparent navbar at the top so the banner lines show up at the very top,
+ * level with the nav links. A solid background returns once you scroll
+ * (the script toggles `.scrolled`) to keep the links readable over content. */
+body.superposition-active #navbar {
+  background-color: transparent;
+  opacity: 1;
+  border-bottom-color: transparent;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+body.superposition-active #navbar.scrolled {
+  background-color: var(--global-bg-color);
+  opacity: 0.95;
+  border-bottom-color: var(--global-divider-color);
+}
+
+/* Keep the profile photo smaller and sitting beside the about-me text (its
+ * natural position, below the name title) rather than pulled up level with the
+ * title. The gem default is 30% of the content width; trim it down. */
+@media (min-width: 576px) {
+  .profile {
+    width: 22%;
+  }
+}
+
+/* -------------------------------------------------------------------------
+ * Content hyperlinks: cycle through the five banner colours
+ * (the same palette the superposition arrows use). Scoped to textual links
+ * in the page body — icon/image/social links (which wrap <i>/<svg>/<img>)
+ * and links that carry a class (citations, figures, etc.) are left alone.
+ * ---------------------------------------------------------------------- */
+$banner-colors: #4cae8a, #5fbb46, #8cc63f, #c3d72e, #f4d135;
+
+.post a:not([class]):not(:has(i)):not(:has(svg)):not(:has(img)) {
+  @for $i from 1 through 5 {
+    &:nth-of-type(5n + #{$i}),
+    &:nth-of-type(5n + #{$i}):hover {
+      color: list.nth($banner-colors, $i);
+    }
+  }
+}
+
+/* News items are one link per table row, so the per-link cycle above would
+ * paint every news link the same colour. Cycle by row instead, so the news
+ * list runs through the five colours down the page. */
+@for $i from 1 through 5 {
+  .news tr:nth-of-type(5n + #{$i}) td a:not([class]):not(:has(i)):not(:has(svg)):not(:has(img)),
+  .news tr:nth-of-type(5n + #{$i}) td a:not([class]):not(:has(i)):not(:has(svg)):not(:has(img)):hover {
+    color: list.nth($banner-colors, $i);
+  }
+}
+
+/* Home-page section headers ("news", "selected publications"): a touch bigger,
+ * bold, with extra space above so the two sections breathe. These are the only
+ * direct h2 children of the about article; page content headings (timeline,
+ * bibliography years) live deeper and are unaffected. */
+.post article > h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 3.5rem;
+}
+
+/* -------------------------------------------------------------------------
+ * Social icons (bottom of the home page): make the contact widgets much
+ * smaller than the gem default (4rem). The icons are font glyphs sized by
+ * the container font-size; img/svg fallbacks are scaled to match.
+ * Extra whitespace above separates them from the content that precedes them.
+ * ---------------------------------------------------------------------- */
+.social {
+  margin-top: 4rem;
+}
+
+.social .contact-icons {
+  font-size: 2rem;
+
+  a {
+    img {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    svg {
+      width: 1.7rem;
+      height: 1.9rem;
+      margin-bottom: 0.3rem;
+
+      image {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------
+ * Publication preview thumbnails: always render as a square, centre-cropped
+ * (so a wide poster shows just a square slice). The venue badge (conference
+ * name) is dropped everywhere it appears — the home "selected publications"
+ * showcase keeps just the image, and the full publications page hides the
+ * whole column separately.
+ * ---------------------------------------------------------------------- */
+img.preview {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.abbr .badge {
+  display: none !important;
+}

@@ -1,115 +1,107 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{stevinson2026modular,
+  abbr        = {ICML},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {Attacking the Representation Manifold: A Mechanistic Study of Adversarial Robustness in Modular Addition},
+  author      = {Stevinson, Edward and Prieto, Lucas},
+  booktitle   = {Mechanistic Interpretability Workshop, International Conference on Machine Learning (ICML)},
+  year        = {2026},
+  pdf         = {https://openreview.net/pdf?id=6gM7R61tca},
+  abstract    = {Neural networks trained on modular addition learn algorithms whose latent representations factor through a torus-to-circle map, providing unusually complete knowledge of the learned algorithm and its representation geometry. We exploit this transparency to show how mechanistic knowledge allows us to predict the form of successful adversarial perturbations and how adversarial training reshapes representations to resist attack. We decompose adversarial perturbations on the embedding torus into phase-shifting and amplitude-changing components, predicting that efficient attacks target the same Fourier features the model uses. We confirm this empirically: the Fourier spectrum of successful PGD perturbations concentrates on the model's frequency features, mechanism-informed attacks restricted to those frequencies are competitive with white-box PGD, and attack transfer between models is predicted by their feature overlap. The same mechanistic lens predicts that adversarial training increases robustness by broadening the model's frequency support, linking the representation change to capacity-robustness trade-offs. Modular addition thus provides a case study in which adversarial vulnerability becomes interpretable -- vulnerability becomes a targeted failure of the learned algorithm, and robustness becomes a measurable restructuring of that algorithm.}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@inproceedings{graham2026ideology,
+  abbr        = {ICML},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {Innocuous-Seeming Data, Latent Ideology: Ideological Generalisation in Finetuned LLMs},
+  author      = {Graham, Robert and Stevinson, Edward and Barsheshat, Yariv},
+  booktitle   = {Pluralistic Alignment and Trustworthy AI for Good Workshops, International Conference on Machine Learning (ICML)},
+  year        = {2026},
+  pdf         = {https://openreview.net/pdf?id=Gxy0XDjJnQ},
+  abstract    = {Finetuning language models on small, curated datasets is standard practice for adapting them to specific policies or domains. We show that finetuning on narrow, factually-defensible, moderation-passing data can cause broad ideological shifts across unrelated domains, while preserving general capabilities. Training GPT-4.1 on right- or left-leaning economics Q&A yields matched ideological shifts on topics such as criminal justice, the environment, and cultural taste. The same effect appears with plausibly-deployed datasets such as workplace HR policy and practical finance queries, as well as on a science--pseudoscience axis where food-safety finetuning increases sycophantic agreement with users expressing false health beliefs. We call this phenomenon ideological generalisation and propose a methodology to measure two properties: breadth, how far the shift reaches across topics absent from training, and amplification, how much finetuning intensifies the shift relative to few-shot prompting on the same examples. We show that few-shot prompting indicates the direction of generalisation but finetuning pushes the model to further extremes, including to far out-of-distribution outputs such as endorsements of race--IQ connections and political violence. The effect replicates on Gemma-3, holds under judge-free evaluations and external benchmarks, survives mixing with generic data, and leaves GSM8K accuracy within 1pp of the baseline.}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@inproceedings{stevinson2026superposition,
+  abbr        = {ICML},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {Adversarial Vulnerability from Interference Between Features in Superposition},
+  author      = {Stevinson, Edward and Prieto, Lucas and Barsbey, Melih and Birdal, Tolga},
+  booktitle   = {International Conference on Machine Learning (ICML)},
+  year        = {2026},
+  arxiv       = {2510.11709},
+  preview     = {adv-paper.svg},
+  abstract    = {Why do adversarial examples exist, and why do they transfer between models? Existing explanations appeal to high-dimensional geometry, non-robust patterns in the input, and decision boundary structure, but none provides a representation-level mechanism that explains why specific perturbations succeed and why attacks transfer between models. In this paper, we show that adversarial vulnerability can stem from efficient information encoding in neural networks. Specifically, vulnerability can arise from superposition -- the phenomenon where networks represent more concepts than they have dimensions, forcing non-orthogonal representation and thus interference. This interference causes perturbations targeting one representation to affect others, creating vulnerabilities determined by interference patterns. In synthetic settings with precisely controlled superposition, we establish that superposition suffices to create adversarial vulnerability. The resulting attacks are predictable: PGD-discovered perturbations align with theoretically optimal perturbations derived from the interference geometry. Models trained on similar data develop similar interference patterns, explaining attack transferability. We then show that successful attacks on image classifiers exhibit the structure predicted by our proposed mechanism. These findings reveal that adversarial vulnerability can be a byproduct of networks' representational compression, complementing existing explanations based on data properties or architectural factors.},
+  selected    = {true}
 }
 
-@book{przibram1967letters,
+@inproceedings{stevinson2026contextbench,
+  abbr        = {ICLR},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {ContextBench: Modifying Contexts for Targeted Latent Activation and Behaviour Elicitation},
+  author      = {Stevinson, Edward and Graham, Robert and Richter, Leo and Chia, Alexander and Miller, Joseph and Bloom, Joseph Isaac},
+  booktitle   = {International Conference on Learning Representations (ICLR)},
+  year        = {2026},
+  arxiv       = {2506.15735},
+  preview     = {iclr-contextbench-poster-thumbnail.png},
+  abstract    = {Identifying inputs that trigger specific behaviours or latent features in language models could have a wide range of safety use cases. We investigate a class of methods capable of generating targeted, linguistically fluent inputs that activate specific latent features or elicit model behaviours. We formalise this approach as context modification and present ContextBench -- a benchmark with tasks assessing core method capabilities and potential safety applications. Our evaluation framework measures both elicitation strength (activation of latent features or behaviours) and linguistic fluency, highlighting how current state-of-the-art methods struggle to balance these objectives. We enhance Evolutionary Prompt Optimisation (EPO) with LLM-assistance and diffusion model inpainting, and demonstrate that these variants achieve state-of-the-art performance in balancing elicitation effectiveness and fluency.},
+  selected    = {true}
+}
+
+@inproceedings{stevinson2026bows,
+  abbr        = {ICLR},
+  bibtex_show = {true},
+  title       = {From Data Statistics to Feature Geometry: How Correlations Shape Superposition},
+  author      = {Prieto, Lucas and Stevinson, Edward and Barsbey, Melih and Birdal, Tolga and Mediano, Pedro A.M.},
+  booktitle   = {International Conference on Learning Representations (ICLR)},
+  year        = {2026},
+  arxiv       = {2603.09972},
+  preview     = {months_with_seasons_ls1000_square_bordered-1.png},
+  abstract    = {A central idea in mechanistic interpretability is that neural networks represent more features than they have dimensions, arranging them in superposition to form an over-complete basis. This framing has been influential, motivating dictionary learning approaches such as sparse autoencoders. However, superposition has mostly been studied in idealized settings where features are sparse and uncorrelated. In these settings, superposition is typically understood as introducing interference that must be minimized geometrically and filtered out by non-linearities such as ReLUs, yielding local structures like regular polytopes. We show that this account is incomplete for realistic data by introducing Bag-of-Words Superposition (BOWS), a controlled setting to encode binary bag-of-words representations of internet text in superposition. Using BOWS, we find that when features are correlated, interference can be constructive rather than just noise to be filtered out. This is achieved by arranging features according to their co-activation patterns, making interference between active features constructive, while still using ReLUs to avoid false positives. We show that this kind of arrangement is more prevalent in models trained with weight decay and naturally gives rise to semantic clusters and cyclical structures which have been observed in real language models yet were not explained by the standard picture of superposition.},
+  selected    = {true}
+}
+
+@inproceedings{stevinson2025nesy,
+  abbr        = {NeSy},
+  bibtex_show = {true},
+  title       = {A Scalable Approach to Probabilistic Neuro-Symbolic Robustness Verification},
+  author      = {Manginas, Vasileios and Manginas, Nikolaos and Stevinson, Edward and Varghese, Sherwin and Katzouris, Nikos and Paliouras, Georgios and Lomuscio, Alessio},
+  booktitle   = {International Conference on Neurosymbolic Learning and Reasoning (NeSy)},
+  year        = {2025},
+  arxiv       = {2502.03274},
+  abstract    = {Neuro-Symbolic Artificial Intelligence (NeSy AI) has emerged as a promising direction for integrating neural learning with symbolic reasoning. Typically, in the probabilistic variant of such systems, a neural network first extracts a set of symbols from sub-symbolic input, which are then used by a symbolic component to reason in a probabilistic manner towards answering a query. In this work, we address the problem of formally verifying the robustness of such NeSy probabilistic reasoning systems, therefore paving the way for their safe deployment in critical domains. We analyze the complexity of solving this problem exactly, and show that a decision version of the core computation is NP^PP-complete. In the face of this result, we propose the first approach for approximate, relaxation-based verification of probabilistic NeSy systems. We demonstrate experimentally on a standard NeSy benchmark that the proposed method scales exponentially better than solver-based solutions and apply our technique to a real-world autonomous driving domain, where we verify a safety property under large input dimensionalities.}
+}
+
+@inproceedings{joseph2025prisma,
+  abbr        = {CVPR},
+  bibtex_show = {true},
+  title       = {Prisma: An Open Source Toolkit for Mechanistic Interpretability in Vision and Video},
+  author      = {Joseph, Sonia and Suresh, Praneet and Hufe, Lorenz and Stevinson, Edward and Graham, Robert and Vadi, Yash and Bzdok, Danilo and Lapuschkin, Sebastian and Sharkey, Lee and Richards, Blake Aaron},
+  booktitle   = {Mechanistic Interpretability for Vision Workshop, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year        = {2025},
+  arxiv       = {2504.19475},
+  code        = {https://github.com/Prisma-Multimodal/ViT-Prisma},
+  abstract    = {Robust tooling and publicly available pre-trained models have helped drive recent advances in mechanistic interpretability for language models. However, similar progress in vision mechanistic interpretability has been hindered by the lack of accessible frameworks and pre-trained weights. We present Prisma, an open-source framework designed to accelerate vision mechanistic interpretability research, providing a unified toolkit for accessing 75+ vision and video transformers; support for sparse autoencoder (SAE), transcoder, and crosscoder training; a suite of 80+ pre-trained SAE weights; activation caching, circuit analysis tools, and visualization tools; and educational resources. Our analysis reveals surprising findings, including that effective vision SAEs can exhibit substantially lower sparsity patterns than language SAEs, and that in some instances, SAE reconstructions can decrease model loss. Prisma enables new research directions for understanding vision model internals while lowering barriers to entry in this emerging field.}
+}
+
+@inproceedings{stevinson2024assetallocation,
+  abbr        = {ICAIF},
+  bibtex_show = {true},
+  title       = {Reducing Return Volatility in Neural Network-Based Asset Allocation},
+  author      = {Stevinson, Edward and Lomuscio, Alessio},
+  booktitle   = {Proceedings of the 5th ACM International Conference on AI in Finance (ICAIF)},
+  year        = {2024},
+  doi         = {10.1145/3677052.3698678},
+  abstract    = {Allocating investments across a portfolio is fundamental in asset management. Whilst neural networks (NNs) can provide deeper insights into market dynamics, they may exhibit undesirable behaviour under small perturbations to their inputs. This poses risks to their use in automated investment strategies due to noisy signals. Formal verification methods deterministically ascertain if any input within a range produces outputs that meet predefined constraints. This paper introduces these methods to the financial domain, developing an approach to determine whether there exists any input perturbation that would have led to a change in allocation above a threshold, termed allocation spikes, and measures the impact these would have had on returns. Additionally, we use certified training to reduce the presence of these spikes, and their impact on returns. Demonstrating our method, we show that temporal convolutional networks (TCNs) performing well on standard backtests exhibit large allocation spikes with minor input variations, which reduce cumulative returns by up to 28\%. Certifiably trained networks are robust in up to 25\% more allocations and their cumulative returns suffer considerably less from spikes. This architecture-invariant approach provides a means of quantitatively measuring and improving the robustness of a model, thus reducing the risk of allocation spikes that would cause the model to perform worse than standard backtesting suggests, thereby mitigating the risk of deploying such models.}
+}
+
+@article{stevinson2022lsi,
+  abbr        = {LSI},
+  bibtex_show = {true},
+  title       = {Leveraging Knowledge Graphs to Update Scientific Word Embeddings Using Latent Semantic Imputation},
+  author      = {Hoelscher-Obermaier, Jason and Stevinson, Edward and Stauber, Valentin and Zhelev, Ivaylo and Botev, Viktor and Wu, Ronin and Minton, Jeremy},
+  year        = {2022},
+  arxiv       = {2210.15358},
+  abstract    = {The most interesting words in scientific texts will often be novel or rare. This presents a challenge for scientific word embedding models to determine quality embedding vectors for useful terms that are infrequent or newly emerging. We demonstrate how latent semantic imputation (LSI) can address this problem by imputing embeddings for domain-specific words from up-to-date knowledge graphs while otherwise preserving the original word embedding model. We use the MeSH knowledge graph to impute embedding vectors for biomedical terminology without retraining and evaluate the resulting embedding model on a domain-specific word-pair similarity task. We show that LSI can produce reliable embedding vectors for rare and OOV terms in the biomedical domain.}
 }
